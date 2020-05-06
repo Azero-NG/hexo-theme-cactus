@@ -15,6 +15,17 @@
         <% } %>
         <%- partial('_partial/footer') %>
     </div>
+    <% if (is_home()) { %>
+      <div class="footer-custom">
+        <a style="color: #666;" target="_blank" rel="external nofollow" href="https://cloud.tencent.com/product/tcb?from=12334">
+        <b>Powered By 云开发</b>
+        </a>
+        <a target="_blank" rel="external nofollow" href="https://cloud.tencent.com/product/tcb?from=12334">
+          <img src="/images/tcb.png" style="max-width:80%;margin:0;">
+        </a>
+      </div>
+    <% } %>
+
     <%- partial('_partial/styles') %>
     <%- partial('_partial/scripts') %>
 </body>
